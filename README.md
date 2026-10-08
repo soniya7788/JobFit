@@ -52,39 +52,31 @@ The long-term goal is to evolve JobFit into a **personal career intelligence pla
 
 | Login | Register |
 |---|---|
-| <img src="<img width="1351" height="601" alt="image" src="https://github.com/user-attachments/assets/032e5d1f-e8d0-4535-94ce-447b197106a2" />
-" width="100%"> | <img src="<img width="1344" height="597" alt="image" src="https://github.com/user-attachments/assets/89f1e4f1-d52c-46e8-ac20-9695a3c6ca03" />
-" width="100%"> |
+| <img src="https://github.com/user-attachments/assets/032e5d1f-e8d0-4535-94ce-447b197106a2" width="100%"> | <img src="https://github.com/user-attachments/assets/89f1e4f1-d52c-46e8-ac20-9695a3c6ca03" width="100%"> |
 
 ### Main Dashboard
 
-<img src="<img width="796" height="2400" alt="image" src="https://github.com/user-attachments/assets/cf5fef36-ef7f-403b-b5f7-1ee330e03fe7" />
-" width="100%">
+<img src="https://github.com/user-attachments/assets/cf5fef36-ef7f-403b-b5f7-1ee330e03fe7" width="100%">
 
 ### Applications
 
-<img src="<img width="796" height="3375" alt="image" src="https://github.com/user-attachments/assets/ec10c73b-3f7b-4dcd-9c35-c8039b9a859c" />
-" width="100%">
+<img src="https://github.com/user-attachments/assets/ec10c73b-3f7b-4dcd-9c35-c8039b9a859c" width="100%">
 
 ### Add Application
 
-<img src="<img width="796" height="1477" alt="image" src="https://github.com/user-attachments/assets/6a676da4-83c5-44d5-94a2-0fb748726126" />
-" width="100%">
+<img src="https://github.com/user-attachments/assets/6a676da4-83c5-44d5-94a2-0fb748726126" width="100%">
 
 ### Application Details & Interview Journey
 
-<img src="<img width="796" height="2364" alt="image" src="https://github.com/user-attachments/assets/08815035-4106-4086-a4e6-961cf72ebad8" />
-" width="100%">
+<img src="https://github.com/user-attachments/assets/08815035-4106-4086-a4e6-961cf72ebad8" width="100%">
 
 ### Add Interview Round
 
-<img src="<img width="796" height="1126" alt="image" src="https://github.com/user-attachments/assets/de9e313d-59b4-455d-8513-6dcbe4ecce52" />
-" width="100%">
+<img src="https://github.com/user-attachments/assets/de9e313d-59b4-455d-8513-6dcbe4ecce52" width="100%">
 
 ### Analytics
 
-<img src="<img width="796" height="2328" alt="image" src="https://github.com/user-attachments/assets/8e9f6737-f411-4ab2-8ffe-9b343a9449a5" />
-" width="100%">
+<img src="https://github.com/user-attachments/assets/8e9f6737-f411-4ab2-8ffe-9b343a9449a5" width="100%">
 
 ---
 
