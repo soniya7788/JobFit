@@ -56,7 +56,7 @@ The long-term goal is to evolve JobFit into a **personal career intelligence pla
 
 ### Main Dashboard
 
-<img src="localhost_8080_JobFit_dashboard.png" width="100%">
+<img src="[localhost_8080_JobFit_dashboard.png](https://github.com/soniya7788/project-sc/blob/main/localhost_8080_JobFit_dashboard.png?raw=true)" width="100%">
 
 ### Applications
 
