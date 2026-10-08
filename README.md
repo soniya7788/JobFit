@@ -46,29 +46,37 @@ The long-term goal is to evolve JobFit into a **personal career intelligence pla
 
 ---
 
-# Project Preview
+## Project Screenshots
 
-The current application includes authentication, application tracking, interview management, dashboard insights and analytics.
+### Authentication
 
-### Login
+| Login | Register |
+|---|---|
+| <img src="Screenshot%202026-10-08%20135346.png" width="100%"> | <img src="Screenshot%202026-10-08%20135424.png" width="100%"> |
 
-<img src="screenshots/login.png" alt="JobFit Login" width="900">
+### Main Dashboard
 
-### Dashboard
-
-<img src="screenshots/dashboard.png" alt="JobFit Dashboard" width="900">
+<img src="localhost_8080_JobFit_dashboard.png" width="100%">
 
 ### Applications
 
-<img src="screenshots/applications.png" alt="JobFit Applications" width="900">
+<img src="localhost_8080_JobFit_applications.png" width="100%">
 
-### Interview Journey
+### Add Application
 
-<img src="screenshots/application-details.png" alt="JobFit Interview Journey" width="900">
+<img src="localhost_8080_JobFit_add-application.jsp.png" width="100%">
+
+### Application Details & Interview Journey
+
+<img src="localhost_8080_JobFit_application-details_id=11.png" width="100%">
+
+### Add Interview Round
+
+<img src="localhost_8080_JobFit_add-round.jsp_applicationId=2.png" width="100%">
 
 ### Analytics
 
-<img src="screenshots/analytics.png" alt="JobFit Analytics" width="900">
+<img src="localhost_8080_JobFit_analytics.png" width="100%">
 
 ---
 
