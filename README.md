@@ -52,7 +52,7 @@ The long-term goal is to evolve JobFit into a **personal career intelligence pla
 
 | Login | Register |
 |---|---|
-| <img src="Screenshot%202026-10-08%20135346.png" width="100%"> | <img src="Screenshot%202026-10-08%20135424.png" width="100%"> |
+| <img src="[Screenshot%202026-10-08%20135346.png](https://github.com/soniya7788/project-sc/blob/main/Screenshot%202026-10-08%20135424.png?raw=true)" width="100%"> | <img src="[Screenshot%202026-10-08%20135424.png](https://github.com/soniya7788/project-sc/blob/main/Screenshot%202026-10-08%20135346.png?raw=true)" width="100%"> |
 
 ### Main Dashboard
 
