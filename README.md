@@ -48,36 +48,90 @@ The long-term goal is to evolve JobFit into a **personal career intelligence pla
 
 ## Project Screenshots
 
-### Authentication
+The following screenshots showcase the main workflow and interface of JobFit.
 
-| Login | Register |
-|---|---|
-| <img src="https://github.com/user-attachments/assets/032e5d1f-e8d0-4535-94ce-447b197106a2" width="100%"> | <img src="https://github.com/user-attachments/assets/89f1e4f1-d52c-46e8-ac20-9695a3c6ca03" width="100%"> |
+---
 
-### Main Dashboard
+## Authentication
 
-<img src="https://github.com/user-attachments/assets/cf5fef36-ef7f-403b-b5f7-1ee330e03fe7" width="100%">
+<table>
+<tr>
+<td align="center"><strong>Login</strong></td>
+<td align="center"><strong>Register</strong></td>
+</tr>
+<tr>
+<td align="center">
+<a href="https://github.com/user-attachments/assets/032e5d1f-e8d0-4535-94ce-447b197106a2">
+<img src="https://github.com/user-attachments/assets/032e5d1f-e8d0-4535-94ce-447b197106a2" width="380">
+</a>
+</td>
+<td align="center">
+<a href="https://github.com/user-attachments/assets/89f1e4f1-d52c-46e8-ac20-9695a3c6ca03">
+<img src="https://github.com/user-attachments/assets/89f1e4f1-d52c-46e8-ac20-9695a3c6ca03" width="380">
+</a>
+</td>
+</tr>
+</table>
 
-### Applications
+---
 
-<img src="https://github.com/user-attachments/assets/ec10c73b-3f7b-4dcd-9c35-c8039b9a859c" width="100%">
+## Main Dashboard
 
-### Add Application
+<a href="https://github.com/user-attachments/assets/cf5fef36-ef7f-403b-b5f7-1ee330e03fe7">
+<img src="https://github.com/user-attachments/assets/cf5fef36-ef7f-403b-b5f7-1ee330e03fe7" width="500">
+</a>
 
-<img src="https://github.com/user-attachments/assets/6a676da4-83c5-44d5-94a2-0fb748726126" width="100%">
+> Click the screenshot to view the complete dashboard.
 
-### Application Details & Interview Journey
+---
 
-<img src="https://github.com/user-attachments/assets/08815035-4106-4086-a4e6-961cf72ebad8" width="100%">
+## Applications
 
-### Add Interview Round
+<a href="https://github.com/user-attachments/assets/ec10c73b-3f7b-4dcd-9c35-c8039b9a859c">
+<img src="https://github.com/user-attachments/assets/ec10c73b-3f7b-4dcd-9c35-c8039b9a859c" width="500">
+</a>
 
-<img src="https://github.com/user-attachments/assets/de9e313d-59b4-455d-8513-6dcbe4ecce52" width="100%">
+> Click the screenshot to view the complete applications page.
 
-### Analytics
+---
 
-<img src="https://github.com/user-attachments/assets/8e9f6737-f411-4ab2-8ffe-9b343a9449a5" width="100%">
+## Add Application
 
+<a href="https://github.com/user-attachments/assets/6a676da4-83c5-44d5-94a2-0fb748726126">
+<img src="https://github.com/user-attachments/assets/6a676da4-83c5-44d5-94a2-0fb748726126" width="500">
+</a>
+
+> Click the screenshot to view the complete application form.
+
+---
+
+## Application Details & Interview Journey
+
+<a href="https://github.com/user-attachments/assets/08815035-4106-4086-a4e6-961cf72ebad8">
+<img src="https://github.com/user-attachments/assets/08815035-4106-4086-a4e6-961cf72ebad8" width="500">
+</a>
+
+> Click the screenshot to view the complete interview journey.
+
+---
+
+## Add Interview Round
+
+<a href="https://github.com/user-attachments/assets/de9e313d-59b4-455d-8513-6dcbe4ecce52">
+<img src="https://github.com/user-attachments/assets/de9e313d-59b4-455d-8513-6dcbe4ecce52" width="500">
+</a>
+
+> Click the screenshot to view the complete interview round form.
+
+---
+
+## Analytics
+
+<a href="https://github.com/user-attachments/assets/8e9f6737-f411-4ab2-8ffe-9b343a9449a5">
+<img src="https://github.com/user-attachments/assets/8e9f6737-f411-4ab2-8ffe-9b343a9449a5" width="500">
+</a>
+
+> Click the screenshot to view the complete analytics dashboard.
 ---
 
 # Current Features
