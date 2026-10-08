@@ -10,6 +10,7 @@
 
 <img src="https://img.shields.io/badge/Java-17%2B-orange?style=for-the-badge&logo=openjdk&logoColor=white">
 <img src="https://img.shields.io/badge/JSP-Servlets-0B5CAD?style=for-the-badge&logo=java&logoColor=white">
+<img src="https://img.shields.io/badge/JDBC-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 <img src="https://img.shields.io/badge/MySQL-9.x-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white">
 <img src="https://img.shields.io/badge/Tomcat-10.1-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black">
@@ -19,53 +20,36 @@
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-<img src="https://img.shields.io/badge/JDBC-Database%20Layer-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 <img src="https://img.shields.io/badge/Eclipse-IDE-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white">
+<img src="https://img.shields.io/badge/Git-GitHub-F05032?style=for-the-badge&logo=git&logoColor=white">
 
 <br><br>
 
 <img src="https://img.shields.io/badge/Status-Active%20Development-2563EB?style=flat-square">
 <img src="https://img.shields.io/badge/Project-Portfolio-111827?style=flat-square">
-<img src="https://img.shields.io/badge/Backend-Java-0B5CAD?style=flat-square">
-<img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=flat-square">
+<img src="https://img.shields.io/badge/Architecture-Java%20Web%20App-0B5CAD?style=flat-square">
 
 </div>
 
 ---
 
-## What is JobFit?
+## About
 
-JobFit is a web-based platform designed to help students and freshers manage their complete job-search and interview journey in one place.
+JobFit is a Java-based web application for managing the job-search journey of students and freshers.
 
-Instead of keeping applications, interview rounds, scores, results and improvement notes scattered across spreadsheets, notes or messages, JobFit brings them together into a single platform.
-
-### The idea
-
-> **Don't just track where you applied — understand how you perform, where you are losing opportunities, and what to improve next.**
+It brings **applications, interview rounds, results and performance analysis** into one place.
 
 ```text
-Apply
-  ↓
-Track
-  ↓
-Interview
-  ↓
-Record Results
-  ↓
-Analyze
-  ↓
-Identify Weak Areas
-  ↓
-Improve
-  ↓
-Get Hired
+Apply → Track → Interview → Record → Analyze → Improve
 ```
+
+The long-term goal is to evolve JobFit into a **personal career intelligence platform** with resume analysis, job matching, skill-gap detection and personalized career guidance.
 
 ---
 
 # Project Preview
 
-The current version focuses on application tracking, interview management, dashboard insights and performance analytics.
+The current application includes authentication, application tracking, interview management, dashboard insights and analytics.
 
 ### Login
 
@@ -89,292 +73,78 @@ The current version focuses on application tracking, interview management, dashb
 
 ---
 
-# Core Features
+# Current Features
 
-| Module | What it does |
-|---|---|
-| **Authentication** | Registration, login, session management and logout |
-| **Applications** | Add, view and track job applications |
-| **Interview Rounds** | Record multiple rounds for each application |
-| **Interview Scores** | Store scores and performance details |
-| **Interview Journey** | Follow the complete round-by-round progress |
-| **Dashboard** | View overall job-search activity |
-| **Analytics** | Understand interview and company performance |
-| **Focus Indicators** | Identify areas that may need improvement |
+| Feature | Status |
+|---|:---:|
+| User Registration & Login | ✅ |
+| Session Management | ✅ |
+| Job Application Tracking | ✅ |
+| Application Status | ✅ |
+| Application Details | ✅ |
+| Interview Round Management | ✅ |
+| Interview Scores & Results | ✅ |
+| Interview Journey | ✅ |
+| Dashboard | ✅ |
+| Application Pipeline | ✅ |
+| Interview Pipeline | ✅ |
+| Performance Analytics | ✅ |
+| Interview-Type Analysis | ✅ |
+| Company-Wise Analysis | ✅ |
+| Performance Focus Indicators | ✅ |
 
 ---
 
-# Application Tracking
-
-Each application stores the information needed to follow its complete journey.
-
-| Information | Examples |
-|---|---|
-| Company | TCS, Infosys, Wipro |
-| Role | Java Developer, QA Tester |
-| Location | Pune, Remote |
-| Work Mode | On-site, Hybrid, Remote |
-| Application Date | Date applied |
-| Source | LinkedIn, Naukri, Company Website |
-| Job URL | Original job posting |
-| Status | Applied, Interviewing, Offer, Rejected |
-| Notes | Personal application notes |
-
-### Application Flow
+# Technical Architecture
 
 ```text
-                 ┌────────────┐
-                 │   Applied  │
-                 └─────┬──────┘
-                       ↓
-              ┌────────────────┐
-              │  Interviewing  │
-              └───────┬────────┘
-                      │
-          ┌───────────┼───────────┐
-          ↓           ↓           ↓
-      Rejected      Offer       On Hold
+                         JOBFIT
+                            │
+             ┌──────────────┴──────────────┐
+             │                             │
+          Frontend                      Backend
+             │                             │
+      JSP / HTML / CSS              Jakarta Servlets
+      JavaScript                          │
+             │                            │
+             └──────────────┬─────────────┘
+                            │
+                           JDBC
+                            │
+                            ▼
+                     ┌─────────────┐
+                     │    MySQL    │
+                     └─────────────┘
 ```
 
----
-
-# Interview Management
-
-Each application can contain multiple interview rounds.
-
-| Round Type | Example |
-|---|---|
-| Aptitude | Quantitative / Logical |
-| Technical | Java / SQL / OOP |
-| Coding | Programming problems |
-| Communication | Speaking / Communication |
-| HR | Behavioral questions |
-| Managerial | Managerial discussion |
-| Other | Custom interview type |
-
-Each round can store:
+### Request Flow
 
 ```text
-Round Number
-Round Name
-Round Type
-Interview Date
-Status
-Score
-Skills Tested
-Description
-What Went Well
-Improvement Notes
-```
-
-### Interview Journey
-
-```text
-Application
-     │
-     ▼
-┌───────────────┐
-│ Round 1       │
-│ Aptitude      │
-│ Score: 78     │
-└───────┬───────┘
-        ↓
-┌───────────────┐
-│ Round 2       │
-│ Technical     │
-│ Score: 82     │
-└───────┬───────┘
-        ↓
-┌───────────────┐
-│ Round 3       │
-│ HR            │
-│ Score: 74     │
-└───────┬───────┘
-        ↓
-      Result
-```
-
----
-
-# Dashboard
-
-The dashboard provides a quick overview of the user's job-search activity without requiring them to inspect every application individually.
-
-### Dashboard Metrics
-
-| Metric | Purpose |
-|---|---|
-| **Total Applications** | Number of jobs tracked |
-| **Interviewing** | Active interview processes |
-| **Cleared Rounds** | Successful interview rounds |
-| **Clearance Rate** | Overall round success |
-| **Total Rounds** | Total interview activity |
-| **Overall Score** | Average interview performance |
-
-### Dashboard also provides
-
-- Application pipeline
-- Interview round pipeline
-- Recent applications
-- Performance by interview type
-- Focus areas
-- Application status distribution
-
----
-
-# Analytics
-
-JobFit does **not use the same visualization for every type of data**.
-
-Different information is represented according to what makes it easiest to understand.
-
-| Data Context | Representation |
-|---|---|
-| Overall numbers | Metric cards |
-| Interview-type scores | Horizontal performance bars |
-| Application status | Pipeline / distribution |
-| Round status | Round pipeline |
-| Company performance | Comparison cards |
-| Interview journey | Timeline-style flow |
-| Weak areas | Focus indicators |
-| Historical performance | Trend visualization |
-
-### Example
-
-```text
-Interview Performance
-
-Technical       ████████████████  87%
-Coding          █████████████████ 91%
-Communication   ███████████████    80%
-Aptitude        ██████████████     78%
-HR              █████████████████  91%
-```
-
-The purpose is to quickly answer:
-
-> **Where am I strong, where am I struggling, and what should I improve?**
-
----
-
-# Architecture
-
-JobFit follows a Java web application architecture using JSP, Jakarta Servlets, JDBC and MySQL.
-
-```text
-                    USER
-                     │
-                     ▼
-            ┌─────────────────┐
-            │     Browser     │
-            │                 │
-            │ JSP / HTML / CSS│
-            │   JavaScript    │
-            └────────┬────────┘
-                     │
-                     │ HTTP
-                     ▼
-            ┌─────────────────┐
-            │    Servlets     │
-            │                 │
-            │ Login           │
-            │ Register        │
-            │ Dashboard       │
-            │ Applications    │
-            │ Application     │
-            │ Details         │
-            │ Rounds          │
-            │ Analytics       │
-            └────────┬────────┘
-                     │
-                     │ JDBC
-                     ▼
-            ┌─────────────────┐
-            │      MySQL      │
-            │                 │
-            │ users           │
-            │ applications    │
-            │ interview_rounds│
-            └─────────────────┘
-```
-
----
-
-# Request Flow
-
-```text
-JSP / Browser
-     │
-     ▼
+Browser
+   │
+   ▼
+JSP / HTML Form
+   │
+   ▼
 HTTP Request
-     │
-     ▼
+   │
+   ▼
 Servlet
-     │
-     ▼
+   │
+   ▼
 JDBC
-     │
-     ▼
+   │
+   ▼
 MySQL
-     │
-     ▼
+   │
+   ▼
 Servlet Processing
-     │
-     ▼
-JSP
-     │
-     ▼
-Updated UI
-```
-
----
-
-# Database Design
-
-JobFit currently revolves around three main entities.
-
-```text
-┌──────────────┐
-│    users     │
-└──────┬───────┘
-       │
-       │ 1 : many
-       ▼
-┌──────────────────┐
-│   applications   │
-└────────┬─────────┘
-         │
-         │ 1 : many
-         ▼
-┌──────────────────┐
-│ interview_rounds │
-└──────────────────┘
-```
-
-### Main Data
-
-| Table | Purpose |
-|---|---|
-| `users` | User accounts and authentication |
-| `applications` | Job application information |
-| `interview_rounds` | Interview rounds, scores and results |
-
-### Relationship
-
-```text
-One User
    │
-   ├── Application 1
-   │      ├── Round 1
-   │      ├── Round 2
-   │      └── Round 3
+   ▼
+JSP Response
    │
-   ├── Application 2
-   │      ├── Round 1
-   │      └── Round 2
-   │
-   └── Application 3
-          └── Round 1
+   ▼
+Browser
 ```
 
 ---
@@ -386,9 +156,11 @@ JobFit/
 │
 ├── src/
 │   └── main/
+│       │
 │       ├── java/
 │       │   └── com/
 │       │       └── jobfit/
+│       │           │
 │       │           ├── DBConnection.java
 │       │           ├── LoginServlet.java
 │       │           ├── RegisterServlet.java
@@ -401,6 +173,7 @@ JobFit/
 │       │           └── AnalyticsServlet.java
 │       │
 │       └── webapp/
+│           │
 │           ├── index.jsp
 │           ├── login.jsp
 │           ├── register.jsp
@@ -410,8 +183,10 @@ JobFit/
 │           ├── add-application.jsp
 │           ├── add-round.jsp
 │           ├── analytics.jsp
+│           │
 │           ├── css/
 │           │   └── style.css
+│           │
 │           └── WEB-INF/
 │               └── web.xml
 │
@@ -427,40 +202,164 @@ JobFit/
 └── README.md
 ```
 
----
+### Main Layers
 
-# Current Status
-
-<div align="center">
-
-| Area | Status |
-|---|:---:|
-| Project Setup | ✅ |
-| Maven Configuration | ✅ |
-| MySQL Connection | ✅ |
-| User Registration | ✅ |
-| User Login / Logout | ✅ |
-| Application Tracking | ✅ |
-| Application Details | ✅ |
-| Interview Rounds | ✅ |
-| Interview Scores | ✅ |
-| Dashboard | ✅ |
-| Analytics | ✅ |
-| Company Analysis | ✅ |
-| Interview-Type Analysis | ✅ |
-| Performance Focus | ✅ |
-| Resume Analyzer | 🔜 |
-| Job Matching | 🔜 |
-| Skill Gap Analysis | 🔜 |
-| AI Career Assistant | 🔜 |
-
-</div>
+| Layer | Responsibility |
+|---|---|
+| `JSP` | User interface |
+| `Servlets` | Request handling and application logic |
+| `JDBC` | Database communication |
+| `MySQL` | Persistent data storage |
+| `CSS / JavaScript` | UI styling and interaction |
+| `Maven` | Dependency and build management |
+| `Tomcat` | Web application server |
 
 ---
 
-# Roadmap
+# Database Structure
 
-## Phase 1 — Job Tracking
+JobFit currently uses three core tables.
+
+```text
+┌────────────────────┐
+│       users        │
+├────────────────────┤
+│ PK id              │
+│ name               │
+│ email              │
+│ password           │
+│ created_at         │
+└─────────┬──────────┘
+          │
+          │ 1 : N
+          ▼
+┌────────────────────┐
+│   applications     │
+├────────────────────┤
+│ PK id              │
+│ FK user_id         │
+│ company_name       │
+│ job_role           │
+│ role_description   │
+│ location           │
+│ job_type           │
+│ application_date   │
+│ job_url            │
+│ source             │
+│ status             │
+│ notes              │
+│ created_at         │
+└─────────┬──────────┘
+          │
+          │ 1 : N
+          ▼
+┌────────────────────┐
+│ interview_rounds   │
+├────────────────────┤
+│ PK id              │
+│ FK application_id  │
+│ round_number       │
+│ round_name         │
+│ round_type         │
+│ other_round_type   │
+│ round_description  │
+│ round_date         │
+│ status             │
+│ score              │
+│ skills             │
+│ what_went_well     │
+│ improvement_notes  │
+└────────────────────┘
+```
+
+### Relationships
+
+```text
+One User
+   │
+   ├── Application
+   │      ├── Interview Round
+   │      ├── Interview Round
+   │      └── Interview Round
+   │
+   ├── Application
+   │      └── Interview Round
+   │
+   └── Application
+          ├── Interview Round
+          └── Interview Round
+```
+
+### Database Responsibility
+
+| Table | Stores |
+|---|---|
+| `users` | User accounts |
+| `applications` | Job and application information |
+| `interview_rounds` | Round details, scores, skills and outcomes |
+
+---
+
+# Application & Interview Flow
+
+```text
+                    JOB APPLICATION
+                          │
+                          ▼
+                       Applied
+                          │
+                          ▼
+                    Interviewing
+                          │
+             ┌────────────┼────────────┐
+             ▼            ▼            ▼
+          Round 1      Round 2      Round 3
+             │            │            │
+             ▼            ▼            ▼
+          Result       Result       Result
+             │            │            │
+             └────────────┼────────────┘
+                          ▼
+                 Offer / Rejected
+```
+
+### Interview Round Status
+
+```text
+Pending
+   │
+   ▼
+Scheduled
+   │
+   ├──────────────► Cleared
+   │
+   └──────────────► Not Cleared
+```
+
+---
+
+# Analytics Approach
+
+JobFit uses different representations depending on the data being shown.
+
+| Data Context | Representation |
+|---|---|
+| Overall KPIs | Metric Cards |
+| Application Status | Pipeline / Distribution |
+| Interview Status | Round Pipeline |
+| Interview-Type Performance | Horizontal Bars |
+| Company Performance | Comparison Cards |
+| Application Journey | Timeline / Journey |
+| Weak Areas | Focus Indicators |
+| Future Historical Data | Trend Charts |
+
+This keeps the analytics page focused on **understanding patterns**, rather than displaying everything as a plain table.
+
+---
+
+# Development Roadmap
+
+## Phase 1 — Application & Interview Tracking
 
 - [x] Authentication
 - [x] Application management
@@ -474,12 +373,13 @@ JobFit/
 
 - [ ] Search applications
 - [ ] Filter by company
-- [ ] Filter by status
 - [ ] Filter by role
+- [ ] Filter by status
 - [ ] Sort applications
 - [ ] Edit applications
 - [ ] Edit interview rounds
-- [ ] Complete application history
+- [ ] Application history
+- [ ] Timeline view
 - [ ] Target role / career goal
 
 ## Phase 3 — Resume Intelligence
@@ -490,24 +390,30 @@ JobFit/
 - [ ] Resume improvement suggestions
 - [ ] Job Description input
 - [ ] Job Description analysis
+- [ ] Important keyword extraction
 - [ ] Resume ↔ JD comparison
-- [ ] Match percentage
+
+## Phase 4 — Job Matching
+
+- [ ] Job match percentage
 - [ ] Matched skills
 - [ ] Missing skills
+- [ ] Partially matched skills
 - [ ] Missing keywords
+- [ ] Job suitability score
+- [ ] Role-specific recommendations
 
-## Phase 4 — Career Intelligence
+## Phase 5 — Career Intelligence
 
 - [ ] Skill-gap analysis
-- [ ] Personalized skill roadmap
 - [ ] Target-role analysis
-- [ ] Job suitability score
-- [ ] Personalized preparation plan
+- [ ] Personalized skill roadmap
 - [ ] Interview preparation
 - [ ] Performance trends
+- [ ] Learning recommendations
 - [ ] Job recommendations
 
-## Phase 5 — AI-Powered JobFit
+## Phase 6 — AI-Powered JobFit
 
 - [ ] AI resume feedback
 - [ ] AI job-fit explanation
@@ -520,94 +426,58 @@ JobFit/
 
 # Future Scope
 
-The long-term goal is to evolve JobFit from a **job application tracker** into a **personal career intelligence platform**.
-
-### Future User Journey
+The future direction of JobFit is to move from **tracking** to **personalized career guidance**.
 
 ```text
-        ┌──────────────┐
-        │    RESUME    │
-        └──────┬───────┘
-               ↓
-        ┌──────────────┐
-        │   JOB / JD   │
-        └──────┬───────┘
-               ↓
-        ┌──────────────┐
-        │  JOB MATCH   │
-        └──────┬───────┘
-               ↓
-        ┌──────────────┐
-        │    APPLY     │
-        └──────┬───────┘
-               ↓
-        ┌──────────────┐
-        │  INTERVIEW   │
-        └──────┬───────┘
-               ↓
-        ┌──────────────┐
-        │   ANALYZE    │
-        └──────┬───────┘
-               ↓
-        ┌──────────────┐
-        │  SKILL GAP   │
-        └──────┬───────┘
-               ↓
-        ┌──────────────┐
-        │   ROADMAP    │
-        └──────┬───────┘
-               ↓
-        ┌──────────────┐
-        │   GET HIRED  │
-        └──────────────┘
+                         FUTURE JOBFIT
+
+                            Resume
+                              │
+                              ▼
+                       Resume Analysis
+                              │
+                              ▼
+                       Job Description
+                              │
+                              ▼
+                         Job Matching
+                              │
+                              ▼
+                           Apply
+                              │
+                              ▼
+                         Interview
+                              │
+                              ▼
+                          Analytics
+                              │
+                              ▼
+                         Skill Gaps
+                              │
+                              ▼
+                      Learning Roadmap
+                              │
+                              ▼
+                    Personalized Guidance
+                              │
+                              ▼
+                         Get Hired
 ```
 
-### Planned Intelligence
+### Planned Future Modules
 
-| Future Feature | Purpose |
+| Module | Goal |
 |---|---|
-| **Resume Analyzer** | Identify resume weaknesses |
-| **JD Analyzer** | Extract job requirements |
-| **Resume ↔ JD Match** | Measure suitability for a role |
-| **Skill Gap Analysis** | Identify missing skills |
-| **Career Goal** | Personalize recommendations |
-| **Skill Roadmap** | Suggest what to learn next |
-| **Interview Preparation** | Prepare for target roles |
-| **Performance Trends** | Track improvement over time |
-| **Job Recommendations** | Find better-fit opportunities |
-| **AI Assistant** | Provide personalized career guidance |
-
----
-
-# Future Resume & Job Matching
-
-One of the major planned features is comparing a user's resume against a specific job description.
-
-```text
-                    RESUME
-                      │
-                      ▼
-             ┌─────────────────┐
-             │ Resume Analyzer │
-             └────────┬────────┘
-                      │
-                      │
-JOB DESCRIPTION ──────┤
-                      ▼
-             ┌─────────────────┐
-             │  Job Analyzer   │
-             └────────┬────────┘
-                      │
-                      ▼
-             ┌─────────────────┐
-             │  Match Engine   │
-             └────────┬────────┘
-                      │
-          ┌───────────┼───────────┐
-          ▼           ▼           ▼
-       Matched      Missing     Partial
-       Skills       Skills      Matches
-```
+| **Resume Analyzer** | Evaluate resume sections and identify improvements |
+| **JD Analyzer** | Extract skills, requirements and keywords from a job description |
+| **Resume ↔ JD Match** | Compare a resume with a specific job |
+| **Skill Gap Engine** | Identify skills missing for the target role |
+| **Career Goal** | Let users define their desired role |
+| **Skill Roadmap** | Generate a personalized learning direction |
+| **Interview Preparation** | Prepare according to the target role |
+| **Performance Trends** | Track improvement across interviews |
+| **Job Recommendations** | Recommend roles based on user profile |
+| **AI Career Assistant** | Provide personalized career guidance |
 
 ---
 
@@ -616,11 +486,11 @@ JOB DESCRIPTION ──────┤
 ```text
 Target Role: Java Developer
 
-                JOB MATCH
-                   82%
-             ───────────────
+              JOB MATCH
+                 82%
+          ───────────────
 
-Matched Skills
+Matched
 ✓ Java
 ✓ OOP
 ✓ SQL
@@ -632,147 +502,107 @@ Needs Improvement
 △ REST API
 △ React
 
-Suggested Next Step
+Next Focus
 → Strengthen Spring Boot + REST API
 ```
 
 ---
 
-# Example Skill Gap Analysis
+# Example Future Skill Roadmap
 
 ```text
-Target Role: Java Developer
-
-Skill               Current Level       Target Level
-────────────────────────────────────────────────────
-Java                 ██████████  Strong     ██████████
-SQL                  ████████    Good       █████████
-JDBC                 ████████    Good       █████████
-Git                  ███████     Good       ████████
-REST API             █████       Basic      █████████
-Spring Boot          ███         Beginner   █████████
-React                ██          Beginner   ███████
+             TARGET ROLE
+             Java Developer
+                   │
+                   ▼
+              Core Java
+                   │
+                   ▼
+           OOP + Collections
+                   │
+                   ▼
+               SQL + JDBC
+                   │
+                   ▼
+              REST APIs
+                   │
+                   ▼
+             Spring Boot
+                   │
+                   ▼
+              Git + GitHub
+                   │
+                   ▼
+                Projects
+                   │
+                   ▼
+          Interview Preparation
 ```
 
 ---
 
-# Example Personalized Roadmap
-
-```text
-TARGET ROLE
-Java Developer
-      │
-      ▼
-Core Java
-      │
-      ▼
-OOP + Collections
-      │
-      ▼
-SQL + JDBC
-      │
-      ▼
-REST APIs
-      │
-      ▼
-Spring Boot
-      │
-      ▼
-Git + GitHub
-      │
-      ▼
-Projects
-      │
-      ▼
-Interview Preparation
-```
-
----
-
-# AI Career Assistant — Future
-
-A future version may provide personalized recommendations based on:
+# Example Future AI Flow
 
 ```text
 Resume
-  +
+   +
 Job Description
-  +
+   +
 Application History
-  +
+   +
 Interview Scores
-  +
+   +
 Target Role
-  +
+   +
 Skill Gaps
-       │
-       ▼
-  AI Career Assistant
-       │
-       ▼
-Personalized Guidance
+        │
+        ▼
+┌──────────────────────┐
+│  AI Career Assistant │
+└──────────┬───────────┘
+           │
+           ▼
+Personalized Suggestions
 ```
 
-Example:
+Possible future recommendations:
 
-> "Your technical interview scores are strong, but your communication scores are consistently lower. Focus on mock HR interviews and communication practice before your next interview."
+> Improve REST API knowledge before applying to similar Java Developer roles.
 
-Possible future capabilities:
+> Your technical performance is strong, but communication scores are comparatively lower.
 
-- Resume feedback
-- Job-fit explanation
-- Interview preparation
-- Skill recommendations
-- Career roadmap
-- Learning suggestions
-- Personalized interview feedback
-- Target-role preparation
+> Add Spring Boot projects to strengthen your profile for this target role.
 
 ---
 
-# Security Considerations
+# Setup & Installation
 
-This project is currently intended as an educational and portfolio application.
+### Requirements
 
-For production deployment, the following improvements would be required:
-
-| Area | Production Improvement |
+| Requirement | Version / Tool |
 |---|---|
-| Passwords | Secure password hashing |
-| Database | Environment-based credentials |
-| Sessions | Secure session configuration |
-| Input | Strong validation and sanitization |
-| SQL | Prepared statements |
-| HTTPS | Encrypted communication |
-| Authorization | Strong user-level access control |
-| Secrets | Never store credentials in source code |
+| Java | JDK 17+ |
+| IDE | Eclipse |
+| Server | Apache Tomcat 10.1 |
+| Database | MySQL |
+| Database Tool | MySQL Workbench |
+| Build Tool | Maven |
+| Version Control | Git |
 
----
-
-# Setup
-
-## Requirements
-
-- JDK 17+
-- Eclipse IDE
-- Apache Tomcat 10.1
-- MySQL Server
-- MySQL Workbench
-- Maven
-
-## Clone Repository
+### Clone
 
 ```bash
 git clone https://github.com/soniya7788/JobFit.git
 cd JobFit
 ```
 
-## Create Database
+### Database
 
-Open MySQL Workbench:
+Create the database in MySQL:
 
 ```sql
 CREATE DATABASE jobfit;
+
 USE jobfit;
 ```
 
@@ -784,7 +614,7 @@ applications
 interview_rounds
 ```
 
-## Configure Database Connection
+### Database Configuration
 
 Open:
 
@@ -792,7 +622,7 @@ Open:
 src/main/java/com/jobfit/DBConnection.java
 ```
 
-Configure your local database credentials:
+Configure your local MySQL credentials:
 
 ```java
 private static final String URL =
@@ -804,16 +634,16 @@ private static final String PASSWORD =
         "YOUR_PASSWORD";
 ```
 
-> Never commit your real database password to a public repository.
+> Never commit real database credentials to a public repository.
 
-## Run the Application
+### Run
 
 1. Import the project into Eclipse as a Maven project.
 2. Configure JDK 17 or later.
 3. Configure Apache Tomcat 10.1.
 4. Update Maven dependencies.
-5. Add JobFit to Tomcat.
-6. Start the Tomcat server.
+5. Add JobFit to the Tomcat server.
+6. Start the server.
 
 Open:
 
@@ -823,25 +653,44 @@ http://localhost:8080/JobFit/
 
 ---
 
+# Security Notes
+
+The current project is primarily an educational and portfolio application.
+
+For production deployment, the following should be strengthened:
+
+| Area | Production Improvement |
+|---|---|
+| Authentication | Secure password hashing |
+| Credentials | Environment variables / secret management |
+| Sessions | Secure session configuration |
+| Input | Strong validation and sanitization |
+| SQL | Prepared statements |
+| Transport | HTTPS |
+| Authorization | User-level access control |
+| Secrets | Never commit credentials |
+
+---
+
 # Git Workflow
 
 ```text
-                    Local Project
-                         │
-                         ▼
-                      git add
-                         │
-                         ▼
-                    git commit
-                         │
-                         ▼
-                     git push
-                         │
-                         ▼
-                       GitHub
+Local Eclipse Project
+        │
+        ▼
+     git add
+        │
+        ▼
+    git commit
+        │
+        ▼
+     git push
+        │
+        ▼
+      GitHub
 ```
 
-Typical workflow:
+Typical update:
 
 ```bash
 git add .
@@ -853,13 +702,13 @@ git push
 
 # Why JobFit?
 
-Most job platforms mainly focus on:
+Traditional job-search flow:
 
 ```text
-Find Job → Apply
+Find Job → Apply → Wait → Repeat
 ```
 
-JobFit is designed around the complete journey:
+JobFit aims for:
 
 ```text
 Find
@@ -881,29 +730,28 @@ Apply Better
 Get Hired
 ```
 
-The central idea is:
-
 > **Every interview should teach you something about your next one.**
 
 ---
 
-# Learning & Technical Experience
+# Learning Outcomes
 
-This project provides practical experience with:
+This project provides hands-on experience with:
 
-| Area | Experience |
+| Area | Technologies / Concepts |
 |---|---|
 | Programming | Java |
-| Web | JSP, HTML, CSS, JavaScript |
+| Frontend | JSP, HTML, CSS, JavaScript |
 | Backend | Jakarta Servlets |
-| Database | MySQL |
-| Database Access | JDBC |
+| Database | MySQL, SQL |
+| Connectivity | JDBC |
 | Build | Maven |
 | Server | Apache Tomcat |
 | IDE | Eclipse |
-| Version Control | Git & GitHub |
-| Application Design | Web application architecture |
-| Data | Analytics and performance visualization |
+| Version Control | Git, GitHub |
+| Web Concepts | HTTP, Sessions, Request/Response |
+| Application Design | Java Web Architecture |
+| Analytics | Performance metrics and visualizations |
 
 ---
 
@@ -911,19 +759,15 @@ This project provides practical experience with:
 
 <div align="center">
 
-### 🚧 Actively Developing
+### 🚧 Active Development
 
-JobFit currently focuses on:
-
-**Application Tracking → Interview Management → Performance Analytics**
-
-The next major direction is:
-
-**Resume Intelligence → Job Matching → Skill Gap Analysis**
-
-followed by:
-
-**Personalized AI-Powered Career Guidance**
+| Current | Next |
+|---|---|
+| Application Tracking | Resume Analysis |
+| Interview Management | Job Matching |
+| Dashboard | Skill Gap Analysis |
+| Analytics | Career Roadmap |
+| Performance Insights | AI Career Guidance |
 
 <br>
 
@@ -961,10 +805,8 @@ Building practical software projects and continuously improving development skil
 
 ### A smarter way to understand your job-search journey.
 
-**Track your applications.**
-
-**Understand your performance.**
-
-**Improve your chances.**
+**Track your applications.  
+Understand your performance.  
+Improve your chances.**
 
 </div>
