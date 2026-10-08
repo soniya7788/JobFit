@@ -52,31 +52,31 @@ The long-term goal is to evolve JobFit into a **personal career intelligence pla
 
 | Login | Register |
 |---|---|
-| <img src="[Screenshot%202026-10-08%20135346.png](https://github.com/soniya7788/project-sc/blob/main/Screenshot%202026-10-08%20135424.png?raw=true)" width="100%"> | <img src="[Screenshot%202026-10-08%20135424.png](https://github.com/soniya7788/project-sc/blob/main/Screenshot%202026-10-08%20135346.png?raw=true)" width="100%"> |
+| <img src="./Screenshot%202026-10-08%20135346.png" width="100%"> | <img src="./Screenshot%202026-10-08%20135424.png" width="100%"> |
 
 ### Main Dashboard
 
-<img src="[localhost_8080_JobFit_dashboard.png](https://github.com/soniya7788/project-sc/blob/main/localhost_8080_JobFit_dashboard.png?raw=true)" width="100%">
+<img src="./localhost_8080_JobFit_dashboard.png" width="100%">
 
 ### Applications
 
-<img src="localhost_8080_JobFit_applications.png" width="100%">
+<img src="./localhost_8080_JobFit_applications.png" width="100%">
 
 ### Add Application
 
-<img src="localhost_8080_JobFit_add-application.jsp.png" width="100%">
+<img src="./localhost_8080_JobFit_add-application.jsp.png" width="100%">
 
 ### Application Details & Interview Journey
 
-<img src="localhost_8080_JobFit_application-details_id=11.png" width="100%">
+<img src="./localhost_8080_JobFit_application-details_id=11.png" width="100%">
 
 ### Add Interview Round
 
-<img src="localhost_8080_JobFit_add-round.jsp_applicationId=2.png" width="100%">
+<img src="./localhost_8080_JobFit_add-round.jsp_applicationId=2.png" width="100%">
 
 ### Analytics
 
-<img src="localhost_8080_JobFit_analytics.png" width="100%">
+<img src="./localhost_8080_JobFit_analytics.png" width="100%">
 
 ---
 
