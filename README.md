@@ -46,11 +46,20 @@ The long-term goal is to evolve JobFit into a **personal career intelligence pla
 
 ---
 
-## Project Screenshots
+<div align="center">
 
-The following screenshots showcase the main workflow and interface of JobFit.
+# Project Screenshots
+
+<p>
+  A visual walkthrough of the JobFit application, covering authentication,
+  application tracking, interview management, and performance analytics.
+</p>
+
+</div>
 
 ---
+
+<div align="center">
 
 ## Authentication
 
@@ -59,79 +68,92 @@ The following screenshots showcase the main workflow and interface of JobFit.
 <td align="center"><strong>Login</strong></td>
 <td align="center"><strong>Register</strong></td>
 </tr>
+
 <tr>
-<td align="center">
-<a href="https://github.com/user-attachments/assets/032e5d1f-e8d0-4535-94ce-447b197106a2">
-<img src="https://github.com/user-attachments/assets/032e5d1f-e8d0-4535-94ce-447b197106a2" width="380">
-</a>
+<td>
+<img src="https://github.com/user-attachments/assets/032e5d1f-e8d0-4535-94ce-447b197106a2" width="420">
 </td>
-<td align="center">
-<a href="https://github.com/user-attachments/assets/89f1e4f1-d52c-46e8-ac20-9695a3c6ca03">
-<img src="https://github.com/user-attachments/assets/89f1e4f1-d52c-46e8-ac20-9695a3c6ca03" width="380">
-</a>
+
+<td>
+<img src="https://github.com/user-attachments/assets/89f1e4f1-d52c-46e8-ac20-9695a3c6ca03" width="420">
 </td>
 </tr>
 </table>
 
+</div>
+
 ---
+
+<div align="center">
 
 ## Main Dashboard
 
-<a href="https://github.com/user-attachments/assets/cf5fef36-ef7f-403b-b5f7-1ee330e03fe7">
-<img src="https://github.com/user-attachments/assets/cf5fef36-ef7f-403b-b5f7-1ee330e03fe7" width="500">
-</a>
+<img src="https://github.com/user-attachments/assets/cf5fef36-ef7f-403b-b5f7-1ee330e03fe7" width="650">
 
-> Click the screenshot to view the complete dashboard.
+<p><em>Central dashboard for applications, interview performance, pipeline status, and career focus.</em></p>
+
+</div>
 
 ---
+
+<div align="center">
 
 ## Applications
 
-<a href="https://github.com/user-attachments/assets/ec10c73b-3f7b-4dcd-9c35-c8039b9a859c">
-<img src="https://github.com/user-attachments/assets/ec10c73b-3f7b-4dcd-9c35-c8039b9a859c" width="500">
-</a>
+<img src="https://github.com/user-attachments/assets/ec10c73b-3f7b-4dcd-9c35-c8039b9a859c" width="650">
 
-> Click the screenshot to view the complete applications page.
+<p><em>Track companies, roles, application status, interview rounds, and next steps.</em></p>
+
+</div>
 
 ---
+
+<div align="center">
 
 ## Add Application
 
-<a href="https://github.com/user-attachments/assets/6a676da4-83c5-44d5-94a2-0fb748726126">
-<img src="https://github.com/user-attachments/assets/6a676da4-83c5-44d5-94a2-0fb748726126" width="500">
-</a>
+<img src="https://github.com/user-attachments/assets/6a676da4-83c5-44d5-94a2-0fb748726126" width="650">
 
-> Click the screenshot to view the complete application form.
+<p><em>Add a new job application with role, company, work mode, source, and planned interview rounds.</em></p>
+
+</div>
 
 ---
+
+<div align="center">
 
 ## Application Details & Interview Journey
 
-<a href="https://github.com/user-attachments/assets/08815035-4106-4086-a4e6-961cf72ebad8">
-<img src="https://github.com/user-attachments/assets/08815035-4106-4086-a4e6-961cf72ebad8" width="500">
-</a>
+<img src="https://github.com/user-attachments/assets/08815035-4106-4086-a4e6-961cf72ebad8" width="650">
 
-> Click the screenshot to view the complete interview journey.
+<p><em>View the complete interview journey, round performance, scores, skills, and improvement areas.</em></p>
+
+</div>
 
 ---
+
+<div align="center">
 
 ## Add Interview Round
 
-<a href="https://github.com/user-attachments/assets/de9e313d-59b4-455d-8513-6dcbe4ecce52">
-<img src="https://github.com/user-attachments/assets/de9e313d-59b4-455d-8513-6dcbe4ecce52" width="500">
-</a>
+<img src="https://github.com/user-attachments/assets/de9e313d-59b4-455d-8513-6dcbe4ecce52" width="650">
 
-> Click the screenshot to view the complete interview round form.
+<p><em>Record interview round details, scores, skills evaluated, outcomes, and improvement notes.</em></p>
+
+</div>
 
 ---
 
+<div align="center">
+
 ## Analytics
 
-<a href="https://github.com/user-attachments/assets/8e9f6737-f411-4ab2-8ffe-9b343a9449a5">
-<img src="https://github.com/user-attachments/assets/8e9f6737-f411-4ab2-8ffe-9b343a9449a5" width="500">
-</a>
+<img src="https://github.com/user-attachments/assets/8e9f6737-f411-4ab2-8ffe-9b343a9449a5" width="650">
 
-> Click the screenshot to view the complete analytics dashboard.
+<p><em>Analyze interview performance through scores, round pipelines, company comparisons, and focus indicators.</em></p>
+
+</div>
+
 ---
 
 # Current Features
