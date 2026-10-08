@@ -26,7 +26,6 @@
 <br><br>
 
 <img src="https://img.shields.io/badge/Status-Active%20Development-2563EB?style=flat-square">
-<img src="https://img.shields.io/badge/Project-Portfolio-111827?style=flat-square">
 <img src="https://img.shields.io/badge/Architecture-Java%20Web%20App-0B5CAD?style=flat-square">
 
 </div>
